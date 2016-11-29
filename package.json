@@ -14,5 +14,13 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^2.0.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyegoroff/prmzfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iyegoroff/prmzfy/issues"
+  },
+  "homepage": "https://github.com/iyegoroff/prmzfy#readme"
 }
