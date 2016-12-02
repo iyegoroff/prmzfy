@@ -1,6 +1,7 @@
 prmzfy
 =========
 [![npm version](https://badge.fury.io/js/prmzfy.svg)](https://badge.fury.io/js/prmzfy)
+[![Build Status](https://travis-ci.org/iyegoroff/prmzfy.svg?branch=master)](https://travis-ci.org/iyegoroff/prmzfy)
 [![devDependency Status](https://david-dm.org/iyegoroff/prmzfy/dev-status.svg)](https://david-dm.org/iyegoroff/prmzfy?type=dev)
 [![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/prmzfy)
 
