@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "noImplicitUseStrict": true,
-        "module": "commonjs",
+        "module": "umd",
         "target": "es5",
         "lib": [
             "es6"

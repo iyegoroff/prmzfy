@@ -1,7 +1,7 @@
 define(function (require) {
     var bdd = require('intern!bdd');
     var expect = require('intern/chai!expect');
-    var prmzfy = require('intern/dojo/node!../../dist/prmzfy');
+    var prmzfy = require('../../dist/prmzfy');
 
     var createDummy = function (options) {
         var fn = function (a, b, cb) { 
