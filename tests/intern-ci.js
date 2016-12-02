@@ -1,7 +1,13 @@
 define({
     environments: [
-        { browserName: 'iphone', platform: 'OS X 10.10',
-  version: '9.0', deviceName: 'iPad Retina' }
+        {
+            browserName: 'Browser',
+            recordVideo: false,
+            recordScreenshots: false,
+            deviceName: 'Android Emulator',
+            platformVersion: '5.1',
+            platformName: 'Android'
+        }
         // { 
         //     browserName: 'chrome', 
         //     version: ['33', '48'], 
