@@ -1,9 +1,33 @@
 define({
     environments: [
-        { browserName: 'chrome', version: ['33', 'latest'], platform: ['Linux', 'Windows 10', 'OS X 10.11'] },
-        { browserName: 'firefox', version: ['29', 'latest'], platform: ['Linux', 'Windows 10', 'OS X 10.11'] },
-        { browserName: 'MicrosoftEdge', version: ['13', 'latest'], platform: 'Windows 10' },
-        { browserName: 'safari', version: ['9', 'latest'], platform: 'OS X 10.11' }
+        { 
+            browserName: 'chrome', 
+            version: ['33', '48'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'firefox', 
+            version: ['29', '45'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'MicrosoftEdge', 
+            version: ['13', '14'], 
+            platform: 'Windows 10',
+            recordVideo: false,
+            recordScreenshots: false 
+        },
+        { 
+            browserName: 'safari', 
+            version: ['9', '10'], 
+            platform: 'OS X 10.11',
+            recordVideo: false,
+            recordScreenshots: false 
+        }
     ],
 
 	tunnel: 'SauceLabsTunnel',
