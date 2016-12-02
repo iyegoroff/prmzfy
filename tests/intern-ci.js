@@ -1,6 +1,6 @@
 define({
     environments: [
-        { browserName: 'chrome', version: '33', platform: 'Linux' }
+        { browserName: 'chrome', version: ['33', 'latest'], platform: ['Linux', 'Windows', 'MacOS'] }
     ],
 
 	tunnel: 'SauceLabsTunnel',
