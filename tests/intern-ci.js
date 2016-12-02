@@ -1,12 +1,14 @@
 define({
     environments: [
         {
-            browserName: 'Browser',
-            recordVideo: false,
-            recordScreenshots: false,
-            deviceName: 'Android Emulator',
-            platformVersion: '5.1',
-            platformName: 'Android'
+             browserName: 'Safari',
+             appiumVersion: '1.5.3',
+             recordVideo: false,
+             recordScreenshots: false,
+             deviceName: 'iPhone 6s Plus Device',
+             deviceOrientation: 'portrait',
+             platformVersion: '9.3',
+             platformName: 'iOS'
         }
         // { 
         //     browserName: 'chrome', 
