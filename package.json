@@ -6,7 +6,8 @@
   "scripts": {
     "preversion": "npm run build",
     "build": "tsc",
-    "test": "intern-client config=tests/intern"
+    "test": "intern-client config=tests/intern-local",
+    "test-ci": "intern-client config=tests/intern-ci"
   },
   "keywords": [
     "promisify"
