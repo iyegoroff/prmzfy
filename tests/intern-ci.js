@@ -1,45 +1,44 @@
 define({
     environments: [
-        // { 
-        //     browserName: 'chrome', 
-        //     version: ['33', '48'], 
-        //     platform: ['Linux', 'Windows 10', 'OS X 10.11'],
-        //     recordVideo: false,
-        //     recordScreenshots: false
-        // },
-        // { 
-        //     browserName: 'firefox', 
-        //     version: ['29', '45'], 
-        //     platform: ['Linux', 'Windows 10', 'OS X 10.11'],
-        //     recordVideo: false,
-        //     recordScreenshots: false
-        // },
-        // { 
-        //     browserName: 'MicrosoftEdge', 
-        //     version: ['13', '14'], 
-        //     platform: 'Windows 10',
-        //     recordVideo: false,
-        //     recordScreenshots: false 
-        // },
-        // { 
-        //     browserName: 'safari', 
-        //     version: ['9', '10'], 
-        //     platform: 'OS X 10.11',
-        //     recordVideo: false,
-        //     recordScreenshots: false 
-        // },
-        // {
-        //     browserName: 'Safari',
-        //     appiumVersion: '1.6.1',
-        //     recordVideo: false,
-        //     recordScreenshots: false,
-        //     deviceName: 'iPhone Simulator',
-        //     deviceOrientation: 'portrait',
-        //     platformVersion: '10.0',
-        //     platformName: 'iOS'
-        // },
         { 
-            browserName: "android"
+            browserName: 'chrome', 
+            version: ['33', '48'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'firefox', 
+            version: ['29', '45'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'MicrosoftEdge', 
+            version: ['13', '14'], 
+            platform: 'Windows 10',
+            recordVideo: false,
+            recordScreenshots: false 
+        },
+        { 
+            browserName: 'safari', 
+            version: ['9', '10'], 
+            platform: 'OS X 10.11',
+            recordVideo: false,
+            recordScreenshots: false 
+        },
+        {
+            browserName: 'ios',
+            version: '10',
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'android',
+            version: '5.1',
+            recordVideo: false,
+            recordScreenshots: false
         }
     ],
 
