@@ -7,6 +7,10 @@ node_js:
 addons:
   sauce_connect: true
 
+branches:
+  only:
+    - master
+
 before_script:
   - npm run build
 
