@@ -5,7 +5,7 @@ prmzfy
 [![devDependency Status](https://david-dm.org/iyegoroff/prmzfy/dev-status.svg)](https://david-dm.org/iyegoroff/prmzfy?type=dev)
 [![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/prmzfy)
 
-[![Build Status](https://saucelabs.com/browser-matrix/iyegoroff.svg)](https://saucelabs.com/beta/builds/b4948d1b7696be14a11bcd7f26f33aa6cbd835c9)
+[![Build Status](https://saucelabs.com/browser-matrix/iyegoroff.svg)](https://saucelabs.com/beta/builds/442ccffd33f3428c9d37e40b087cc489)
 
 Promisify for nodebacks.
 
