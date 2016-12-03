@@ -29,7 +29,7 @@ define({
         //     recordScreenshots: false 
         // },
         {
-            browserName: 'iOS',
+            browserName: 'iphone',
             recordVideo: false,
             recordScreenshots: false
         },
