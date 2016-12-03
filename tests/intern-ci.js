@@ -30,13 +30,11 @@ define({
         },
         {
             browserName: 'ios',
-            version: '10',
             recordVideo: false,
             recordScreenshots: false
         },
         { 
             browserName: 'android',
-            version: '5.1',
             recordVideo: false,
             recordScreenshots: false
         }
