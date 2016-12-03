@@ -12,6 +12,7 @@ branches:
     - master
 
 before_script:
+  - set
   - npm run build
 
 script:
