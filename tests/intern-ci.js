@@ -38,14 +38,13 @@ define({
         //     platformVersion: '10.0',
         //     platformName: 'iOS'
         // },
-        {
-            browserName: 'Browser',
-            appiumVersion: '1.5.3',
+        { 
+            browserName: "android", 
+            platform: "Linux", 
+            version: "5.1",
             recordVideo: false,
             recordScreenshots: false,
-            deviceName: 'Android Emulator',
-            platformVersion: '5.1',
-            platformName: 'Android'
+            deviceName: "Android Emulator" 
         }
     ],
 
