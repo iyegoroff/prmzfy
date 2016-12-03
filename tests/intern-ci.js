@@ -39,12 +39,7 @@ define({
         //     platformName: 'iOS'
         // },
         { 
-            browserName: "android", 
-            platform: "Linux", 
-            version: "5.1",
-            recordVideo: false,
-            recordScreenshots: false,
-            deviceName: "Android Emulator" 
+            browserName: "android"
         }
     ],
 
