@@ -12,8 +12,8 @@ branches:
     - master
 
 before_script:
-  - set
   - npm run build
 
 script:
-  - npm run test-ci
+  - npm run test:node
+  - if [[ "$TRAVIS_NODE_VERSION" == "4" ]]; then npm run test:browser; fi
