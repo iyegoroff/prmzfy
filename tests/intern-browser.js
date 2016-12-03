@@ -30,14 +30,16 @@ define({
         // },
         {
             browserName: 'iphone',
+            version: '10',
             recordVideo: false,
             recordScreenshots: false
         },
-        // { 
-        //     browserName: 'android',
-        //     recordVideo: false,
-        //     recordScreenshots: false
-        // }
+        { 
+            browserName: 'android',
+            version: '5.1',
+            recordVideo: false,
+            recordScreenshots: false
+        }
     ],
 
 	tunnel: 'SauceLabsTunnel',
