@@ -1,43 +1,33 @@
 define({
     environments: [
-        {
-             browserName: 'Safari',
-             appiumVersion: '1.5.3',
-             recordVideo: false,
-             recordScreenshots: false,
-             deviceName: 'iPhone 6s Plus Device',
-             deviceOrientation: 'portrait',
-             platformVersion: '9.3',
-             platformName: 'iOS'
-        }
-        // { 
-        //     browserName: 'chrome', 
-        //     version: ['33', '48'], 
-        //     platform: ['Linux', 'Windows 10', 'OS X 10.11'],
-        //     recordVideo: false,
-        //     recordScreenshots: false
-        // },
-        // { 
-        //     browserName: 'firefox', 
-        //     version: ['29', '45'], 
-        //     platform: ['Linux', 'Windows 10', 'OS X 10.11'],
-        //     recordVideo: false,
-        //     recordScreenshots: false
-        // },
-        // { 
-        //     browserName: 'MicrosoftEdge', 
-        //     version: ['13', '14'], 
-        //     platform: 'Windows 10',
-        //     recordVideo: false,
-        //     recordScreenshots: false 
-        // },
-        // { 
-        //     browserName: 'safari', 
-        //     version: ['9', '10'], 
-        //     platform: 'OS X 10.11',
-        //     recordVideo: false,
-        //     recordScreenshots: false 
-        // },
+        { 
+            browserName: 'chrome', 
+            version: ['33', '48'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'firefox', 
+            version: ['29', '45'], 
+            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        { 
+            browserName: 'MicrosoftEdge', 
+            version: ['13', '14'], 
+            platform: 'Windows 10',
+            recordVideo: false,
+            recordScreenshots: false 
+        },
+        { 
+            browserName: 'safari', 
+            version: ['9', '10'], 
+            platform: 'OS X 10.11',
+            recordVideo: false,
+            recordScreenshots: false 
+        },
         // {
         //     browserName: 'Safari',
         //     appiumVersion: '1.6.1',
