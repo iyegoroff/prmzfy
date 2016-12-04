@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "noImplicitUseStrict": true,
         "module": "umd",
+        "sourceMap": true,
         "target": "es5",
         "lib": [
             "es6"

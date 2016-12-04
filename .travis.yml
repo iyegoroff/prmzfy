@@ -17,3 +17,6 @@ before_script:
 script:
   - npm run test:node
   - if [[ "$TRAVIS_NODE_VERSION" == "4" ]]; then npm run test:browser; fi
+
+after_script:
+  - if [[ "$TRAVIS_NODE_VERSION" == "4" ]]; then npm run coverage; fi
