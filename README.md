@@ -47,7 +47,7 @@ sp(3, 4)
 
 ### Typescript
 
-This module aslo contains type declarations.
+This module also contains type declarations.
 
 ```typescript
 import * as prmzfy from 'prmzfy';
