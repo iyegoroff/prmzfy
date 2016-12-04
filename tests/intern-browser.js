@@ -44,7 +44,7 @@ define({
 
     maxConcurrency: 5,
 
-    reporters: ['Pretty'],
+    reporters: ['Runner'],
 
     suites: ['tests/unit/index'],
 
