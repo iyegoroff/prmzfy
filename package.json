@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "yet another promisify...",
   "main": "dist/prmzfy.js",
+  "types": "dist/prmzfy.d.ts",
   "scripts": {
     "preversion": "npm run build",
     "build": "tsc && uglifyjs -c -m -o ./dist/prmzfy.min.js ./dist/prmzfy.js",

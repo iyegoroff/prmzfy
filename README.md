@@ -8,7 +8,7 @@ prmzfy
 
 [![Build Status](https://saucelabs.com/browser-matrix/iyegoroff.svg)](https://saucelabs.com/beta/builds/ed79bf765dd04e7f932b779453c3ac000)
 
-Promisify for nodebacks.
+Promisify for nodebacks. Requires Promise to be supported by runtime or via polyfill.
 
 ## Installation
 
