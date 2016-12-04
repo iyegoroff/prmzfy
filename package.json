@@ -1,6 +1,6 @@
 {
   "name": "prmzfy",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "description": "yet another promisify...",
   "main": "dist/prmzfy.js",
   "scripts": {
