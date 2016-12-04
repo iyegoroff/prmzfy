@@ -1,6 +1,16 @@
 define({
     environments: [
         {
+            browserName: 'iphone',
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        {
+            browserName: 'android',
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        {
             browserName: 'chrome',
             version: ['33', '48'],
             platform: ['Linux', 'Windows 10', 'OS X 10.11'],
@@ -25,16 +35,6 @@ define({
             browserName: 'safari',
             version: ['9', '10'],
             platform: 'OS X 10.11',
-            recordVideo: false,
-            recordScreenshots: false
-        },
-        {
-            browserName: 'iphone',
-            recordVideo: false,
-            recordScreenshots: false
-        },
-        {
-            browserName: 'android',
             recordVideo: false,
             recordScreenshots: false
         }
