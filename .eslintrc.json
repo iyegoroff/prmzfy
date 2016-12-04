@@ -11,6 +11,7 @@
             }
         ],
         "max-len": ["error", 120],
-        "no-plusplus": "error"
+        "no-plusplus": "error",
+        "no-param-reassign": ["error", { "props": true }]
     }
 }
