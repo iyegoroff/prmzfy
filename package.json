@@ -16,7 +16,6 @@
   },
   "files": [
     "dist/",
-    "tests/**/*.js",
     "prmzfy.ts",
     "tsconfig.json"
   ],

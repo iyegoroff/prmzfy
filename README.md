@@ -45,6 +45,16 @@ sp(3, 4)
     .then(([sum, prod]) => console.log(sum, prod));
 ```
 
+Don't forget to bind proper context when promisifying prototype methods:
+
+```javascript
+const prmzfy = require('prmzfy');
+
+const foo = new Foo();
+
+const bar = prmzfy(foo.someMethod.bind(foo)); 
+```
+
 ### Typescript
 
 This module also contains type declarations.
