@@ -14,15 +14,15 @@ define({
         },
         {
             browserName: 'chrome',
-            version: ['31', '32', '48'],
-            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            version: ['31', '32', '54'],
+            platform: ['Windows 10'],
             recordVideo: false,
             recordScreenshots: false
         },
         {
             browserName: 'firefox',
-            version: ['28', '29', '45'],
-            platform: ['Linux', 'Windows 10', 'OS X 10.11'],
+            version: ['28', '29', '50'],
+            platform: ['Windows 10'],
             recordVideo: false,
             recordScreenshots: false
         },

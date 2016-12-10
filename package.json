@@ -14,6 +14,12 @@
     "lint": "eslint tests && tslint prmzfy.ts",
     "coverage": "remap-istanbul -i coverage/coverage-final.json --type text-lcov | coveralls"
   },
+  "files": [
+    "dist/",
+    "tests/",
+    "prmzfy.ts",
+    "tsconfig.json"
+  ],
   "keywords": [
     "promisify"
   ],
