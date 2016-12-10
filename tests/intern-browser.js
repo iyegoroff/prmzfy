@@ -2,24 +2,26 @@ define({
     environments: [
         {
             browserName: 'iphone',
+            version: ['8.1', '9.2'],
             recordVideo: false,
             recordScreenshots: false
         },
         {
             browserName: 'android',
+            version: ['4.4', '5.1'],
             recordVideo: false,
             recordScreenshots: false
         },
         {
             browserName: 'chrome',
-            version: ['33', '48'],
+            version: ['32', '33', '48'],
             platform: ['Linux', 'Windows 10', 'OS X 10.11'],
             recordVideo: false,
             recordScreenshots: false
         },
         {
             browserName: 'firefox',
-            version: ['29', '45'],
+            version: ['28', '29', '45'],
             platform: ['Linux', 'Windows 10', 'OS X 10.11'],
             recordVideo: false,
             recordScreenshots: false
@@ -35,6 +37,20 @@ define({
             browserName: 'safari',
             version: ['9', '10'],
             platform: 'OS X 10.11',
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        {
+            browserName: 'safari',
+            version: ['7'],
+            platform: 'OS X 10.9',
+            recordVideo: false,
+            recordScreenshots: false
+        },
+        {
+            browserName: 'internet explorer',
+            version: ['11'],
+            platform: 'Windows 7',
             recordVideo: false,
             recordScreenshots: false
         }
