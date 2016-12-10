@@ -14,7 +14,7 @@ define({
         },
         {
             browserName: 'chrome',
-            version: ['32', '33', '48'],
+            version: ['31', '32', '48'],
             platform: ['Linux', 'Windows 10', 'OS X 10.11'],
             recordVideo: false,
             recordScreenshots: false
