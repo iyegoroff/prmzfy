@@ -6,7 +6,7 @@
   "types": "dist/prmzfy.d.ts",
   "scripts": {
     "preversion": "npm run build && npm test",
-    "postversion": "git add . && git commit -m \"version\" -a && git push && git push --tags",
+    "postversion": "git add -a . && git push && git push --tags",
     "build": "tsc && uglifyjs -c -m -o ./dist/prmzfy.min.js ./dist/prmzfy.js",
     "test": "npm run lint && npm run test:node",
     "test:node": "intern-client config=tests/intern-node",
