@@ -1,22 +1,39 @@
 language: node_js
 
-node_js:
-  - '7'
-  - '4'
+matrix:
+  fast_finish: true
+  include:
+    - env: TEST='node'
+      node_js:
+        - '7'
+        - '4'
+    - env: TEST='browser'
+      node_js: '4'
+  allow_failures:
+    - env: TEST='browser'
 
 addons:
   sauce_connect: true
 
 branches:
   only:
-    - master
+    - /^v\d+\.\d+\.\d+$/
+
+deploy:
+  provider: npm
+  email: iegoroff@gmail.com
+  api_key:
+    secure: ge8P12TXifzkdP69HOUufC7464bimHU1/OwvQGY1ITe1kK/seZR3VUu3FuSC+b8J0Z8jwnXrilQ987a3d0zDyofeykaBLmmKdfd1MRfRgkizXLh3Ny7GA6x39zUHh0kQAvdDE6Gi7yaBfKgrmdHa80U+xUOt8nPMcrnyeaXnWJu3ujho0Jqwwango9398Rq6u2Vl7MRxaOg07o2PJXWuGfeLTsfamS82mIJx5VW8+jro5AmfHRCQ1BKQhoXBn0Kaq4j9MJlz1R7ZkjoVgiz3hyBwxpji6qaNJ5LUgsS2429mfBUE0QHXBkvOGl1//v4tAg3/Wai49+oNzBEn5pOtz9ILVyiE4sv0OHYTwBMSVNXqpHvOT8Z4IUmCylQLrsHHcF8ppgOOvUYCUsBCZ9OfjkRxTIRTPiSJl+1avjNHNP9J2D5b4arbxXuq5Q2iXkG8LhSDZ1BTXJ+yj36HkKg0PyQob37xHNu60FHFkoVv5zT9OtjExC07PXS+v6yKRixWXA+z0jS6dnZQ72Rmu8q5Z9CGV2RoFgrz3d1zublz6uHgO2tPt5YC1UijxZ251JI6/naL4ubo0fK8Kz2QrpQcTXoGPALFBqsNU3GjLU0M/0piq+hq20B0dlfh5yOMfuiZRAbOXaUIaXwB0GvyrALBSS5L7t67ssw+xa2cLH4cAwo=
+  on:
+    tags: true
+    repo: iyegoroff/prmzfy
+
 
 before_script:
   - npm run build
 
 script:
-  - npm run test:node
-  - if [[ "$TRAVIS_NODE_VERSION" == "4" ]]; then npm run test:browser; fi
-
+  - if [[ $TEST == 'node' ]]; then npm run test:node; fi
+  - if [[ $TEST == 'browser' ]]; then npm run test:browser; fi
 after_script:
-  - if [[ "$TRAVIS_NODE_VERSION" == "4" ]]; then npm run coverage; fi
+  - if [[ $TEST == 'node' ]]; then npm run coverage; fi

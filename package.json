@@ -5,14 +5,13 @@
   "main": "dist/prmzfy.js",
   "types": "dist/prmzfy.d.ts",
   "scripts": {
-    "preversion": "npm run build",
+    "preversion": "npm run build && npm test",
+    "postversion": "git add . && git commit -m \"version\" -a && git push && git push --tags",
     "build": "tsc && uglifyjs -c -m -o ./dist/prmzfy.min.js ./dist/prmzfy.js",
     "test": "npm run lint && npm run test:node",
     "test:node": "intern-client config=tests/intern-node",
     "test:browser": "intern-runner config=tests/intern-browser",
-    "lint": "npm run lint:js && npm run lint:ts",
-    "lint:js": "eslint tests",
-    "lint:ts": "tslint prmzfy.ts",
+    "lint": "eslint tests && tslint prmzfy.ts",
     "coverage": "remap-istanbul -i coverage/coverage-final.json --type text-lcov | coveralls"
   },
   "keywords": [

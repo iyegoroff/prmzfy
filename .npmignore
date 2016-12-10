@@ -1,3 +1,8 @@
+.eslintrc.json
+.travis.yml
+tslint.json
+.gitignore
+
 # Logs
 logs
 *.log
