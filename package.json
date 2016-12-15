@@ -27,12 +27,12 @@
   "devDependencies": {
     "coveralls": "^2.11.15",
     "eslint": "^3.11.1",
-    "intern": "^3.4.1",
+    "intern": "^3.4.2",
     "remap-istanbul": "^0.7.0",
     "semistandard": "^9.1.0",
     "tslint": "^4.0.2",
     "tslint-config-standard": "^2.0.0",
-    "typescript": "^2.0.10",
+    "typescript": "^2.1.4",
     "uglify-js": "^2.7.5"
   },
   "repository": {
