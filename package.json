@@ -5,9 +5,11 @@
   "main": "dist/prmzfy.js",
   "types": "dist/prmzfy.d.ts",
   "scripts": {
-    "preversion": "npm run build && npm test",
+    "preversion": "npm run clean && npm run reinstall && npm run build && npm test",
     "postversion": "git add -A . && git push && git push --tags",
     "build": "tsc && uglifyjs -c -m -o ./dist/prmzfy.min.js ./dist/prmzfy.js",
+    "reinstall": "rm -rf node_modules && npm i",
+    "clean": "rm -rf dist build coverage",
     "test": "npm run lint && npm run test:node",
     "test:node": "intern-client config=tests/intern-node",
     "test:browser": "intern-runner config=tests/intern-browser",
