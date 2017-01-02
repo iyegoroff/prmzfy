@@ -5,16 +5,18 @@
   "main": "dist/prmzfy.js",
   "types": "dist/prmzfy.d.ts",
   "scripts": {
-    "preversion": "npm run clean && npm run reinstall && npm run build && npm test",
+    "preversion": "npm run reinstall && npm run build && npm run lint && npm t && npm run break-cache-commit",
     "postversion": "git add -A . && git push && git push --tags",
     "build": "tsc && uglifyjs -c -m -o ./dist/prmzfy.min.js ./dist/prmzfy.js",
-    "reinstall": "rm -rf node_modules && npm i",
+    "reinstall": "npm run clean && rm -rf node_modules && npm i",
     "clean": "rm -rf dist build coverage",
-    "test": "npm run lint && npm run test:node",
+    "test": "npm run test:node",
     "test:node": "intern-client config=tests/intern-node",
     "test:browser": "intern-runner config=tests/intern-browser",
     "lint": "eslint tests && tslint prmzfy.ts",
-    "coverage": "remap-istanbul -i coverage/coverage-final.json --type text-lcov | coveralls"
+    "coverage": "remap-istanbul -i coverage/coverage-final.json --type text-lcov | coveralls",
+    "break-cache": "break-cache -i README.md -m \"\\.svg\" -o README.md",
+    "break-cache-commit": "npm run break-cache && git commit -am \"[skip ci] readme cache break\""
   },
   "files": [
     "dist/",
@@ -27,6 +29,7 @@
   "author": "iyegoroff <iegoroff@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "break-cache": "^1.0.3",
     "coveralls": "^2.11.15",
     "eslint": "^3.11.1",
     "intern": "^3.4.2",
