@@ -1,7 +1,7 @@
 define({
     environments: [
         {
-            'appiumVersion': '1.5.1',
+            'appiumVersion': '1.5.3',
             'deviceName': 'Android Emulator',
             'deviceType': 'phone',
             'deviceOrientation': 'portrait',
