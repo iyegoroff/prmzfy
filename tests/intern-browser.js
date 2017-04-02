@@ -1,27 +1,35 @@
 define({
     environments: [
         {
-            browserName: 'iphone',
-            version: ['8.1', '9.2'],
+            browserName: 'Safari',
+            appiumVersion: '1.6.3',
             recordVideo: false,
-            recordScreenshots: false
+            recordScreenshots: false,
+            deviceName: 'iPhone Simulator',
+            deviceOrientation: 'portrait',
+            platformVersion: ['9.3', '10.2'],
+            platformName: 'iOS'
         },
         {
-            browserName: 'android',
-            version: ['4.4', '5.1'],
+            browserName: 'Browser',
+            appiumVersion: '1.6.3',
             recordVideo: false,
-            recordScreenshots: false
+            recordScreenshots: false,
+            deviceName: 'Android Emulator',
+            deviceOrientation: 'portrait',
+            platformVersion: ['4.4', '5.1', '6.0'],
+            platformName: 'Android'
         },
         {
             browserName: 'chrome',
-            version: ['31', '32', '54'],
+            version: ['31', '32', '57'],
             platform: ['Windows 10'],
             recordVideo: false,
             recordScreenshots: false
         },
         {
             browserName: 'firefox',
-            version: ['28', '29', '50'],
+            version: ['28', '29', '52'],
             platform: ['Windows 10'],
             recordVideo: false,
             recordScreenshots: false
