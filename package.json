@@ -34,8 +34,8 @@
     "eslint": "^3.11.1",
     "intern": "^3.4.2",
     "remap-istanbul": "^0.9.1",
+    "tslint": "^5.0.0",
     "semistandard": "^10.0.0",
-    "tslint": "^4.0.2",
     "tslint-config-standard": "^4.0.0",
     "typescript": "^2.1.4",
     "uglify-js": "^2.7.5"
