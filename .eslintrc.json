@@ -12,6 +12,7 @@
         ],
         "max-len": ["error", 120],
         "no-plusplus": "error",
-        "no-param-reassign": ["error", { "props": true }]
+        "no-param-reassign": ["error", { "props": true }],
+        "no-webpack-loader-syntax": "off"
     }
 }
