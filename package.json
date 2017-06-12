@@ -31,7 +31,7 @@
   "devDependencies": {
     "break-cache": "^1.0.3",
     "coveralls": "^2.11.15",
-    "eslint": "^3.11.1",
+    "eslint": "^4.0.0",
     "intern": "^3.4.2",
     "remap-istanbul": "^0.9.1",
     "tslint": "^5.0.0",
