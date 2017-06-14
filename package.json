@@ -36,7 +36,7 @@
     "remap-istanbul": "^0.9.1",
     "tslint": "^5.0.0",
     "semistandard": "^11.0.0",
-    "tslint-config-standard": "^5.0.2",
+    "tslint-config-standard": "^6.0.1",
     "typescript": "^2.1.4",
     "uglify-js": "^2.7.5"
   },
