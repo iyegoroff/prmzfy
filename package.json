@@ -37,7 +37,7 @@
     "tslint": "^5.0.0",
     "semistandard": "^11.0.0",
     "tslint-config-standard": "^5.0.2",
-    "typescript": "^2.1.4",
+    "typescript": "^2.4.1",
     "uglify-js": "^2.7.5"
   },
   "repository": {
