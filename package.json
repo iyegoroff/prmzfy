@@ -38,7 +38,7 @@
     "semistandard": "^11.0.0",
     "tslint-config-standard": "^5.0.2",
     "typescript": "^2.1.4",
-    "uglify-js": "^2.7.5"
+    "uglify-js": "^3.0.21"
   },
   "repository": {
     "type": "git",
